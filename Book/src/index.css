@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  background-color:blanchedalmond;
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+.navbar h1{
+  font-size: 50px;
+}
+.navbar {
+  border: 8px solid red;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.container {
+  padding: 10px;
+  display: inline-block;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 13cm; /* or adjust based on your content */
+  padding: 15px;
+  width: 12cm;
+  background-color: aqua;
+  color: black;
+  border-radius: 10px;
+  margin: 30px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.book-container h1 {
+  color: darkblue;
+  background-color: aqua;
+  height: 1.5cm;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.book-container h5 {
+  height: 1.5cm;
+  background-color: aqua;
+  font-size:23px ;
+  font-weight: bold;
+}
+
+.book-container p{
+  font-size: 20px;
+  background-color: aqua;
+  height: 8cm;
+}
+
+
+.book-container button {
+  align-self: flex-start;
+  margin-top: auto;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: aqua;
+  color: orangered;
+  border-radius: 50%;
+  padding: 20px 30px;
+  font-size: 40px;
+  border: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.popup-overlay {
+  background-color: white;
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.popup-overlay {
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.popup-box {
+  text-align: center;
+  background-color: coral;
+  width: 50%;
+  padding: 10px;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  z-index: 2;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius:15px;
+  border-bottom-left-radius: 15px;
+}
+
+.popup-box input,
+.popup-box textarea {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  border-bottom: 2px solid black;
+}
+
+.popup-box textarea {
+  border: 2px solid black;
+}
+
+.popup-box input::placeholder,
+.popup-box textarea::placeholder {
+  color: black;
+}
+
+.popup-box input{
+  padding-top:10px ;
+  font-size: 20px;
+  font-weight: bold;
+  height: 2cm;
+}
+
+.popup-box textarea{
+  height: 6cm;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.popup-box h2{
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.popup-box button {
+  row-gap: 2cm;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-box input:focus,
+.popup-box textarea:focus {
+  outline: none;
+}
